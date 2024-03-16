@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet" />
   </head>
 
   <body>
     <!-- Navigation Menu -->
     <nav>
-      <!-- Logo -->
-      <div class="logo-container">
-        <img src="https://placehold.co/100x50" />
-      </div>
-      <!-- Right Navigation -->
-      <ul class="right-menu">
-        <li><a href="home.html">Home</a></li>
-        <li tabindex="0">
+      <!-- Left menu -->
+      <ul class="left-menu">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kid</a></li>
+        <li>
           Collections
           <ul class="sub-category">
             <li><a href="sub-category.html">Western</a></li>
@@ -25,23 +35,38 @@
             <li>Arabic</li>
           </ul>
         </li>
+      </ul>
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="logoipsum-329.svg" />
+      </div>
+      <!-- Right menu -->
+      <ul class="right-menu">
         <li>About Us</li>
-        <li><a href="wish-list.html">Wish List</a></li>
-        <li><a href="shopping-cart.html">Cart</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+        <li><a href="wish-list.html">Wishlist</a></li>
+        <li tabindex="0">
+          <i class="material-icons-outlined">search</i
+          ><input type="text" class="search-box" placeholder="Search Item or Collection..." />
+        </li>
+        <li>
+          <a href="shopping-cart.html"><i class="material-icons-outlined">shopping_bag</i></a>
+        </li>
       </ul>
     </nav>
     <!-- Banner Section -->
     <article class="hp-heroimg">
-      <img src="https://placehold.co/1600x500" />
+      <img
+        src="https://images.unsplash.com/flagged/photo-1553802922-2eb2f7f2c65b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <h1>Spring <span>Collection</span></h1>
+      <div class="hp-cfa">Buy Now</div>
     </article>
     <!-- Collections -->
     <article class="hp-collection">
       <h2>Collections</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nibh a
-        lorem gravida dignissim eu blandit mi. Maecenas vel congue erat, eu
-        tincidunt orci.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nibh a lorem gravida
+        dignissim eu blandit mi. Maecenas vel congue erat, eu tincidunt orci.
       </p>
       <section class="hp-card-container">
         <img src="https://placehold.co/250x300" />
