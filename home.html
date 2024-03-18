@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,13 +28,46 @@
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Kid</a></li>
-          <li>
+          <li tabindex="0">
             Collections
-            <ul class="sub-category">
-              <li><a href="sub-category.html">Western</a></li>
-              <li>Indian</li>
-              <li>Arabic</li>
-            </ul>
+            <div class="subcategory-menu">
+              <ul>
+                <img
+                  src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=2193&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  width="300px"
+                  height="300px" />
+              </ul>
+              <ul>
+                <li>FEATURED</li>
+                <li>Spring Collection</li>
+                <li>New Arrivals</li>
+                <li>On Sale</li>
+              </ul>
+              <ul>
+                <li>WESTERN</li>
+                <li>Tops</li>
+                <li>Bottoms</li>
+                <li>T-Shirts</li>
+                <li>Outerwear</li>
+                <li>Shoes</li>
+              </ul>
+              <ul>
+                <li>INDIA</li>
+                <li>Tops</li>
+                <li>Bottoms</li>
+                <li>T-Shirts</li>
+                <li>Outerwear</li>
+                <li>Shoes</li>
+              </ul>
+              <ul>
+                <li>ARABIC</li>
+                <li>Tops</li>
+                <li>Bottoms</li>
+                <li>T-Shirts</li>
+                <li>Outerwear</li>
+                <li>Shoes</li>
+              </ul>
+            </div>
           </li>
         </ul>
         <!-- Logo -->
@@ -45,10 +78,12 @@
         <ul class="right-menu">
           <li>About Us</li>
           <li><a href="contact-us.html">Contact</a></li>
-          <li><a href="wish-list.html">Wishlist</a></li>
           <li tabindex="0">
             <i class="material-icons-outlined">search</i
             ><input type="text" class="search-box" placeholder="Search Item or Collection..." />
+          </li>
+          <li>
+            <a href="wish-list.html"><i class="material-icons-outlined">favorite_border</i></a>
           </li>
           <li>
             <a href="shopping-cart.html"><i class="material-icons-outlined">shopping_bag</i></a>
@@ -60,54 +95,83 @@
     <article class="hp-heroimg">
       <img
         src="https://images.unsplash.com/flagged/photo-1553802922-2eb2f7f2c65b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      <h1>Spring <span>Collection</span></h1>
-      <div class="hp-cfa">Buy Now</div>
+      <div class="hp-cta-container">
+        <h1>Spring 2024 Collection</h1>
+        <div class="hp-cta-botton">View More</div>
+      </div>
     </article>
     <!-- Collections -->
     <article class="hp-collection">
-      <h2>Collections</h2>
+      <p>New Arrivals</p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nibh a lorem gravida
         dignissim eu blandit mi. Maecenas vel congue erat, eu tincidunt orci.
       </p>
       <section class="hp-card-container">
-        <img src="https://placehold.co/250x300" />
-        <img src="https://placehold.co/250x300" />
-        <img src="https://placehold.co/250x300" />
+        <div class="hp-card-img-container">
+          <img src="/collection 1.jpg" />
+          <div class="hp-cta-botton align-center">View More</div>
+        </div>
+        <div class="hp-card-img-container">
+          <img src="/collection 2.jpg" />
+          <div class="hp-cta-botton align-center">View More</div>
+        </div>
+        <div class="hp-card-img-container">
+          <img src="/collection 3.jpg" />
+          <div class="hp-cta-botton align-center">View More</div>
+        </div>
+      </section>
+    </article>
+    <!-- New Arrivals -->
+    <article class="hp-collection">
+      <p>Key Collections</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu nibh a lorem gravida
+        dignissim eu blandit mi. Maecenas vel congue erat, eu tincidunt orci.
+      </p>
+      <section class="hp-card-container">
+        <img src="https://placehold.co/508x508" />
+        <img src="https://placehold.co/508x508" />
+        <img src="https://placehold.co/508x508" />
       </section>
     </article>
     <!-- Footer -->
     <footer>
-      <section class="left-footer">
-        <div class="footer-logo">
-          <img src="logoipsum-329.svg" />
-        </div>
-      </section>
-      <section class="middle-footer">
-        <ul class="sitemap-container">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Kid</a></li>
-        </ul>
-        <ul class="sitemap-container">
-          <li><a href="wish-list.html">Wishlist</a></li>
-          <li><a href="shopping-cart.html">Shopping Cart</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </section>
-      <section class="right-footer">
-        <div class="subscribe-container">
-          <input type="email" placeholder="E-mail..." />
-          <button>Subscribe</button>
-        </div>
-        <div class="social-media-container">
-          <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://www.x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
-        </div>
-      </section>
+      <div class="footer-content">
+        <section class="left-footer">
+          <div class="footer-logo">
+            <img src="logoipsum-329.svg" />
+          </div>
+        </section>
+        <section class="middle-footer">
+          <h1>Site Map</h1>
+          <div class="sitemap-container">
+            <ul class="sitemap-left">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kid</a></li>
+            </ul>
+            <ul class="sitemap-right">
+              <li><a href="wish-list.html">Wishlist</a></li>
+              <li><a href="shopping-cart.html">Shopping Cart</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="right-footer">
+          <h1>Get in touch</h1>
+          <div class="social-media-container">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="subscribe-container">
+            <input type="email" placeholder="E-mail..." />
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
