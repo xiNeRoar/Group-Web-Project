@@ -666,7 +666,7 @@ footer > .footer-content > .right-footer {
 .cu-map-container > img {
   width: 100vw;
   height: 100vh;
-  filter: grayscale(100%) invert(1);
+  filter: grayscale(100%) invert(65%) contrast(250%);
   margin: 0;
   padding: 0;
   object-fit: cover;
@@ -682,7 +682,9 @@ footer > .footer-content > .right-footer {
 }
 
 .cu-card-container {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
   width: 50%;
   overflow: hidden;
 }
@@ -698,6 +700,18 @@ footer > .footer-content > .right-footer {
   display: flex;
 }
 
+.form-item > label:focus-within,
+.form-item > input:focus-within,
+.form-item > textarea:focus-within {
+  outline: none;
+  border: none;
+  caret-color: black;
+}
+
+.form-item > input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+
 .form-item:nth-of-type(1),
 .form-item:nth-of-type(2),
 .form-item:nth-of-type(3),
@@ -706,35 +720,26 @@ footer > .footer-content > .right-footer {
   justify-content: space-between;
 }
 
-.form-item:nth-of-type(5) > p {
+form > p {
   margin: 0;
   padding: 0;
 }
 
 input,
 textarea {
-  /* border: none; */
+  border: none;
+  background: none;
 }
 
 .form-item {
   position: relative;
-}
-
-.form-item::after {
-  position: absolute;
-  content: "";
-  background: #3a3a3a;
-  width: 100%;
-  height: 0.03em;
-  top: 20px;
+  display: flex;
+  padding: 5px;
+  border-bottom: #3a3a3a solid 1px;
 }
 
 textarea {
   resize: vertical;
-}
-
-textarea::-webkit-resizer {
-  display: none;
 }
 
 /*=========================================== End of Contact Us ===========================================*/
