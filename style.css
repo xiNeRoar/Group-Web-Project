@@ -658,6 +658,87 @@ footer > .footer-content > .right-footer {
 
 /*=========================================== End of About Us ===========================================*/
 
+/*=========================================== Contact Us ===========================================*/
+.cu-map-container {
+  display: flex;
+}
+
+.cu-map-container > img {
+  width: 100vw;
+  height: 100vh;
+  filter: grayscale(100%) invert(1);
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.cu-width-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 62.65%;
+}
+
+.cu-card-container {
+  background: white;
+  width: 50%;
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-item > label,
+.form-item > input {
+  display: flex;
+}
+
+.form-item:nth-of-type(1),
+.form-item:nth-of-type(2),
+.form-item:nth-of-type(3),
+.form-item:nth-of-type(4) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-item:nth-of-type(5) > p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  /* border: none; */
+}
+
+.form-item {
+  position: relative;
+}
+
+.form-item::after {
+  position: absolute;
+  content: "";
+  background: #3a3a3a;
+  width: 100%;
+  height: 0.03em;
+  top: 20px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea::-webkit-resizer {
+  display: none;
+}
+
+/*=========================================== End of Contact Us ===========================================*/
+
 /*=========================================== Responsive ===========================================*/
 
 @media screen and (max-width: 767px) {
