@@ -575,7 +575,10 @@ footer > .footer-content > .right-footer {
 }
 
 .au-content-container > div:nth-child(2) > p {
-  font-weight: 400;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.135em;
+  text-align: center;
 }
 
 .au-history-section::before {
@@ -583,8 +586,8 @@ footer > .footer-content > .right-footer {
   position: absolute;
   width: 6px;
   background-color: #3a3a3a;
-  top: 8.5%;
-  bottom: 10%;
+  top: 2.5%;
+  bottom: 2%;
   left: 5%;
 }
 
@@ -603,16 +606,16 @@ footer > .footer-content > .right-footer {
   position: relative;
 }
 
-.au-history-section > div:nth-child(2) > p:nth-of-type(1)::after,
-.au-history-section > div:nth-child(3) > p:nth-of-type(1)::after,
-.au-history-section > div:nth-child(4) > p:nth-of-type(1)::after {
+.au-history-section > div:nth-child(2) > p:nth-of-type(1)::before,
+.au-history-section > div:nth-child(3) > p:nth-of-type(1)::before,
+.au-history-section > div:nth-child(4) > p:nth-of-type(1)::before {
   position: absolute;
   content: "";
-  height: 0.02em;
-  width: 20px;
+  width: 190px;
+  height: 0.03em;
   background: #3a3a3a;
-  top: 18px;
-  left: 60px;
+  top: 50px;
+  left: -8%;
 }
 
 .au-text-container > video {
@@ -628,11 +631,15 @@ footer > .footer-content > .right-footer {
 }
 
 .au-img-container img {
-  width: calc(100vw / 1.5 - 100vw / 25);
+  width: calc(100vw / 1.865 - 100vw / 25);
   height: calc(100vw / 3 - 100vw / 25);
   filter: grayscale(100%);
   object-fit: cover;
-  object-position: bottom right;
+  object-position: center 20%;
+}
+
+.au-img-container > .banner-img {
+  width: calc(100vw / 1.5 - 100vw / 25);
 }
 
 .au-title-container {
