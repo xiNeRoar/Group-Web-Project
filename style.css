@@ -33,7 +33,7 @@ nav {
 
 .nav-padding {
   display: flex;
-  padding-top: 2.8em;
+  height: 4em;
   background-color: red;
 }
 
@@ -197,7 +197,6 @@ nav {
 /*=========================================== Homepage Banner Section ===========================================*/
 .hp-heroimg {
   position: relative;
-  padding-top: 4em;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -313,7 +312,7 @@ nav {
   margin: 1.5em 0;
   padding: calc(100vw / 4 - 100vw / 5);
   color: white;
-  font-size: 0.75vmax;
+  font-size: 1em;
   text-align: right;
   line-height: 3vmax;
   overflow: hidden;
@@ -544,6 +543,113 @@ footer > .footer-content > .right-footer {
   display: flex;
   justify-content: space-between;
 }
+/*=========================================== End of Shopping-Cart ===========================================*/
+
+/*=========================================== About Us ===========================================*/
+
+.margin-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 calc(100vw / 4.625 - 100vw / 35) calc(100vh / 10 - 100vh / 35)
+    calc(100vw / 4.625 - 100vw / 35);
+}
+
+.au-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.au-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(100vw / 12 - 100vw / 15) 0;
+}
+
+.au-history-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.au-content-container > div:nth-child(2) > p {
+  font-weight: 400;
+}
+
+.au-history-section::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #3a3a3a;
+  top: 8.5%;
+  bottom: 10%;
+  left: 5%;
+}
+
+.au-text-container > p {
+  width: 80%;
+  text-align: left;
+  text-wrap: pretty;
+  line-height: 1.5em;
+}
+
+.au-history-section > div:nth-child(2) > p:nth-of-type(1),
+.au-history-section > div:nth-child(3) > p:nth-of-type(1),
+.au-history-section > div:nth-child(4) > p:nth-of-type(1) {
+  font-size: 1.5em;
+  font-weight: 700;
+  position: relative;
+}
+
+.au-history-section > div:nth-child(2) > p:nth-of-type(1)::after,
+.au-history-section > div:nth-child(3) > p:nth-of-type(1)::after,
+.au-history-section > div:nth-child(4) > p:nth-of-type(1)::after {
+  position: absolute;
+  content: "";
+  height: 0.02em;
+  width: 20px;
+  background: #3a3a3a;
+  top: 18px;
+  left: 60px;
+}
+
+.au-text-container > video {
+  filter: grayscale(100%);
+  width: 80%;
+}
+
+.au-img-container {
+  margin: 0 0 calc(100vw / 10 - 100vw / 15) 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.au-img-container img {
+  width: calc(100vw / 1.5 - 100vw / 25);
+  height: calc(100vw / 3 - 100vw / 25);
+  filter: grayscale(100%);
+  object-fit: cover;
+  object-position: bottom right;
+}
+
+.au-title-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 5px;
+  text-indent: 1px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.75em;
+  text-transform: uppercase;
+}
+
+/*=========================================== End of About Us ===========================================*/
 
 /*=========================================== Responsive ===========================================*/
 
