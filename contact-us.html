@@ -17,6 +17,18 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <script src="/script.js"></script>
   </head>
 
   <body>
@@ -94,43 +106,73 @@
     <div class="nav-padding"></div>
 
     <!-- Map-Backdrop -->
-    <div class="cu-map-container">
-      <img src="https://360mediaventures.com/dev/wp-content/uploads/2013/03/map-placeholder.jpg" />
-    </div>
-    <div class="cu-width-container">
-      <div class="cu-card-container">
-        <p>Contact Us</p>
-        <form action="" method="get" class="form">
-          <div class="form-item">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
+    <div class="cu-backdrop-upper">
+      <div class="cu-width-container">
+        <div class="cu-content-container">
+          <div class="cu-title-content-container">
+            <h1>Contact Us</h1>
+            <p>Email, Call, or complete the form to reach us. We always want to hear from you.</p>
+            <p>info@logo.com</p>
+            <p>604-123-5678</p>
           </div>
-          <div class="form-item">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" />
+          <div class="cu-content-section-container">
+            <div class="cu-content-section">
+              <h2>Shipping</h2>
+              <p>We offer world-class fast and on-time shipping directly to your place.</p>
+            </div>
+            <div class="cu-content-section">
+              <h2>Return</h2>
+              <p>The item does'nt fit you? simply return it back to us, for free!</p>
+            </div>
+            <div class="cu-content-section">
+              <h2>Feedback</h2>
+              <p>
+                Your feedback is invaluable to us. It fuels our progress and inspires us to improve.
+              </p>
+            </div>
           </div>
-          <div class="form-item">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" />
-          </div>
-          <div class="form-item">
-            <label for="message">Message</label>
-            <textarea id="message" rows="1"></textarea>
-          </div>
-          <p>How can we contact you?</p>
-          <div class="form-item">
-            <input type="radio" id="emailpref" name="contactpref" />
-            <label for="contactpref">E-mail</label>
-            <input type="radio" id="phonepref" name="contactpref" />
-            <label for="contactpref">Phone</label>
-          </div>
-          <!-- <div class="form-item">
-          </div> -->
-          <div class="form-item">
-            <button class="form-submit-botton">Submit</button>
-          </div>
-        </form>
+        </div>
+        <div class="cu-card-container">
+          <p>Send us a message</p>
+          <form action="" method="get" class="form">
+            <div class="form-item">
+              <label for="name">Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-item">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <div class="form-item">
+              <label for="message">Message</label>
+              <textarea id="message" rows="1" required></textarea>
+            </div>
+            <p>How can we contact you?</p>
+            <div class="form-item">
+              <input type="radio" id="emailpref" name="contactpref" />
+              <label for="contactpref">E-mail</label>
+              <input type="radio" id="phonepref" name="contactpref" />
+              <label for="contactpref">Phone</label>
+            </div>
+            <div class="form-item">
+              <button class="form-submit-button">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
+
+    <div class="cu-backdrop-lower">
+      <div class="cu-map-container">
+        <div id="map"></div>
+        <!-- <img
+          src="https://360mediaventures.com/dev/wp-content/uploads/2013/03/map-placeholder.jpg" /> -->
+      </div>
+      <div class="cu-width-container"></div>
     </div>
 
     <!-- Footer -->
