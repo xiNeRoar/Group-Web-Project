@@ -17,8 +17,6 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -39,15 +37,12 @@
         <ul class="left-menu">
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
-          <li><a href="#">Kid</a></li>
+          <li><a href="category.html">Kid</a></li>
           <li tabindex="0">
             Collections
             <div class="subcategory-menu">
               <ul>
-                <img
-                  src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=2193&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  width="300px"
-                  height="300px" />
+                <img src="/resources/drop-down-img.jpg" width="300px" height="300px" />
               </ul>
               <ul>
                 <li>FEATURED</li>
@@ -84,7 +79,7 @@
         </ul>
         <!-- Logo -->
         <div class="logo-container">
-          <a href="/home.html"><img src="logoipsum-329.svg" /></a>
+          <a href="/home.html"><img src="/resources/logo.svg" /></a>
         </div>
         <!-- Right menu -->
         <ul class="right-menu">
@@ -107,61 +102,62 @@
 
     <!-- Map-Backdrop -->
     <div class="cu-backdrop-upper">
-      <div class="cu-width-container">
+      <div class="margin-wrapper">
         <div class="cu-content-container">
-          <div class="cu-title-content-container">
-            <h1>Contact Us</h1>
-            <p>Email, Call, or complete the form to reach us. We always want to hear from you.</p>
-            <p>info@logo.com</p>
-            <p>604-123-5678</p>
+          <div class="cu-left-content-container">
+            <div class="cu-title-content-container">
+              <h1>Contact Us</h1>
+              <p>Email, Call, or complete the form to reach us. We always want to hear from you.</p>
+              <p>info@logo.com</p>
+              <p>604-123-5678</p>
+            </div>
+            <div class="cu-content-section-container">
+              <div class="cu-content-section">
+                <h2>Shipping</h2>
+                <p>We offer world-class fast and on-time shipping directly to your place.</p>
+              </div>
+              <div class="cu-content-section">
+                <h2>Return</h2>
+                <p>The item does'nt fit you? simply return it back to us, for free!</p>
+              </div>
+              <div class="cu-content-section">
+                <h2>Feedback</h2>
+                <p>
+                  Your feedback is invaluable to us. It fuels our progress and inspires us to
+                  improve.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="cu-content-section-container">
-            <div class="cu-content-section">
-              <h2>Shipping</h2>
-              <p>We offer world-class fast and on-time shipping directly to your place.</p>
-            </div>
-            <div class="cu-content-section">
-              <h2>Return</h2>
-              <p>The item does'nt fit you? simply return it back to us, for free!</p>
-            </div>
-            <div class="cu-content-section">
-              <h2>Feedback</h2>
-              <p>
-                Your feedback is invaluable to us. It fuels our progress and inspires us to improve.
-              </p>
-            </div>
+          <div class="cu-card-container">
+            <p>Send us a message</p>
+            <form action="" method="get" class="form">
+              <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="form-item">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-item">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required />
+              </div>
+              <div class="form-item">
+                <label for="message">Message</label>
+                <textarea id="message" rows="1" required></textarea>
+              </div>
+              <p>How can we contact you?</p>
+              <div class="form-item">
+                <label><input type="radio" id="emailpref" name="contactpref" />Email</label>
+                <label><input type="radio" id="phonepref" name="contactpref" />Phone</label>
+              </div>
+              <div class="form-item">
+                <button class="form-submit-button">Submit</button>
+              </div>
+            </form>
           </div>
-        </div>
-        <div class="cu-card-container">
-          <p>Send us a message</p>
-          <form action="" method="get" class="form">
-            <div class="form-item">
-              <label for="name">Name</label>
-              <input type="text" id="name" required />
-            </div>
-            <div class="form-item">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" required />
-            </div>
-            <div class="form-item">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" required />
-            </div>
-            <div class="form-item">
-              <label for="message">Message</label>
-              <textarea id="message" rows="1" required></textarea>
-            </div>
-            <p>How can we contact you?</p>
-            <div class="form-item">
-              <input type="radio" id="emailpref" name="contactpref" />
-              <label for="contactpref">E-mail</label>
-              <input type="radio" id="phonepref" name="contactpref" />
-              <label for="contactpref">Phone</label>
-            </div>
-            <div class="form-item">
-              <button class="form-submit-button">Submit</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
@@ -169,8 +165,6 @@
     <div class="cu-backdrop-lower">
       <div class="cu-map-container">
         <div id="map"></div>
-        <!-- <img
-          src="https://360mediaventures.com/dev/wp-content/uploads/2013/03/map-placeholder.jpg" /> -->
       </div>
       <div class="cu-width-container"></div>
     </div>
@@ -180,7 +174,7 @@
       <div class="footer-content">
         <section class="left-footer">
           <div class="footer-logo">
-            <img src="logoipsum-329.svg" />
+            <img src="/resources/logo.svg" />
           </div>
         </section>
         <section class="middle-footer">
@@ -189,9 +183,9 @@
             <ul class="sitemap-left">
               <li><a href="home.html">Home</a></li>
               <li><a href="about-us.html">About Us</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Kid</a></li>
+              <li><a href="category.html">Men</a></li>
+              <li><a href="category.html">Women</a></li>
+              <li><a href="category.html">Kid</a></li>
             </ul>
             <ul class="sitemap-right">
               <li><a href="wish-list.html">Wishlist</a></li>

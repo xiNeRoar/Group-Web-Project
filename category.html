@@ -17,6 +17,9 @@
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body>
@@ -25,54 +28,51 @@
       <nav>
         <!-- Left menu -->
         <ul class="left-menu">
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
+          <li><a href="category.html">Men</a></li>
+          <li><a href="category.html">Women</a></li>
           <li><a href="/category.html">Kid</a></li>
           <li tabindex="0">
             Collections
             <div class="subcategory-menu">
               <ul>
-                <img
-                  src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?q=80&w=2193&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  width="300px"
-                  height="300px" />
+                <img src="/resources/drop-down-img.jpg" width="300px" height="300px" />
               </ul>
               <ul>
-                <li>FEATURED</li>
-                <li>Spring Collection</li>
-                <li>New Arrivals</li>
-                <li>On Sale</li>
+                <li><a href="category.html">FEATURED</a></li>
+                <li><a href="category.html">Spring Collection</a></li>
+                <li><a href="category.html">New Arrivals</a></li>
+                <li><a href="category.html">On Sale</a></li>
               </ul>
               <ul>
-                <li>WESTERN</li>
-                <li>Tops</li>
-                <li>Bottoms</li>
-                <li>T-Shirts</li>
-                <li>Outerwear</li>
-                <li>Shoes</li>
+                <li><a href="category.html">CLASSIC</a></li>
+                <li><a href="category.html">Tops</a></li>
+                <li><a href="category.html">Bottoms</a></li>
+                <li><a href="category.html">T-Shirts</a></li>
+                <li><a href="category.html">Outerwear</a></li>
+                <li><a href="category.html">Shoes</a></li>
               </ul>
               <ul>
-                <li>INDIA</li>
-                <li>Tops</li>
-                <li>Bottoms</li>
-                <li>T-Shirts</li>
-                <li>Outerwear</li>
-                <li>Shoes</li>
+                <li><a href="category.html">MINIMALIST</a></li>
+                <li><a href="category.html">Tops</a></li>
+                <li><a href="category.html">Bottoms</a></li>
+                <li><a href="category.html">T-Shirts</a></li>
+                <li><a href="category.html">Outerwear</a></li>
+                <li><a href="category.html">Shoes</a></li>
               </ul>
               <ul>
-                <li>ARABIC</li>
-                <li>Tops</li>
-                <li>Bottoms</li>
-                <li>T-Shirts</li>
-                <li>Outerwear</li>
-                <li>Shoes</li>
+                <li><a href="category.html">SPORTY</a></li>
+                <li><a href="category.html">Tops</a></li>
+                <li><a href="category.html">Bottoms</a></li>
+                <li><a href="category.html">T-Shirts</a></li>
+                <li><a href="category.html">Outerwear</a></li>
+                <li><a href="category.html">Shoes</a></li>
               </ul>
             </div>
           </li>
         </ul>
         <!-- Logo -->
         <div class="logo-container">
-          <a href="/home.html"><img src="logoipsum-329.svg" /></a>
+          <a href="/home.html"><img src="/resources/logo.svg" /></a>
         </div>
         <!-- Right menu -->
         <ul class="right-menu">
@@ -97,9 +97,7 @@
     <div class="co-banner-container">
       <div class="co-banner-left-container">
         <div class="co-banner-left-img-container">
-          <img
-            src="https://images.unsplash.com/flagged/photo-1570733117311-d990c3816c47?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Spring Collection 2024" />
+          <img src="/resources/category-banner.jpg" alt="Spring Collection 2024" />
         </div>
       </div>
       <div class="co-banner-right-container">
@@ -113,31 +111,39 @@
           carefully curated selection boasts dresses, linen suits, and accessories, each piece
           bathed in the rich, vibrant hues of spring. Designed to invigorate your wardrobe with a
           breath of fresh air, our collection seamlessly combines traditional charm with modern
-          sophistication. Embrace the season's joyful essence and update your look with our
-          distinctive pieces, ensuring you welcome spring with style and grace.
+          sophistication.
         </p>
+      </div>
+      <div class="co-filter-container">
+        <p>Sort by</p>
+        <select>
+          <option value="Featured">Featured</option>
+          <option value="Newest">Newest</option>
+          <option value="PriceHL">Price: High-Low</option>
+          <option value="PriceLH">Price: Low-High</option>
+        </select>
       </div>
       <div class="co-body-container">
         <div class="co-left-panel-container">
           <div class="co-left-panel-title">
-            <h2>Western</h2>
+            <h2>Filter</h2>
           </div>
+
           <div class="co-left-panel-section">
-            <div class="co-left-panel-section-title">
-              <label><input type="checkbox" />Category</label>
-            </div>
+            <input type="checkbox" id="checkbox-toggle-1" />
+            <label for="checkbox-toggle-1">Category</label>
             <div class="co-left-panel-section-dropdown">
-              <label><input type="checkbox" />Tops</label>
-              <label><input type="checkbox" />Bottoms</label>
-              <label><input type="checkbox" />T-Shirts</label>
-              <label><input type="checkbox" />Outerwear</label>
-              <label><input type="checkbox" />Shoes</label>
+              <div>Tops</div>
+              <div>Bottoms</div>
+              <div>T-Shirts</div>
+              <div>Outerwear</div>
+              <div>Shoes</div>
             </div>
           </div>
+
           <div class="co-left-panel-section">
-            <div class="co-left-panel-section-title">
-              <label><input type="checkbox" />Size</label>
-            </div>
+            <input type="checkbox" id="checkbox-toggle-2" />
+            <label for="checkbox-toggle-2">Size</label>
             <div class="co-left-panel-section-size">
               <div>XS</div>
               <div>S</div>
@@ -146,58 +152,124 @@
               <div>XL</div>
             </div>
           </div>
+
           <div class="co-left-panel-section">
-            <div class="co-left-panel-section-title">
-              <label><input type="checkbox" />Color</label>
-            </div>
+            <input type="checkbox" id="checkbox-toggle-3" />
+            <label for="checkbox-toggle-3">Color</label>
             <div class="co-left-panel-section-color">
               <div></div>
               <div></div>
               <div></div>
               <div></div>
             </div>
-            <div class="co-left-panel-section-checkbox">
-              <div class="co-left-panel-section-title">
-                <label><input type="checkbox" />Price</label>
-              </div>
-              <div class="co-left-panel-section-price">
-                <p><input type="checkbox" />Below $49</p>
-                <p><input type="checkbox" />$49 - $99</p>
-                <p><input type="checkbox" />$100+</p>
-              </div>
+          </div>
+
+          <div class="co-left-panel-section">
+            <input type="checkbox" id="checkbox-toggle-4" />
+            <label for="checkbox-toggle-4">Price</label>
+            <div class="co-left-panel-section-price">
+              <label><input type="checkbox" />Below $49</label>
+              <label><input type="checkbox" />$49 - $99</label>
+              <label><input type="checkbox" />$100+</label>
             </div>
           </div>
         </div>
+
         <div class="co-right-content-container">
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/beautiful-fashion-woman-posing-with-elegant-suit_1328-3293.jpg?t=st=1711519324~exp=1711522924~hmac=a760a9c7da634ad21d66a66ce98924e2aff4935964dac5711616ab716c852cd3&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/women1.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Blazer</p>
+              <p>4 Size</p>
+              <p>2 Colors</p>
+              <p>CA $179</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-1" />
+              <label class="material-symbols-outlined" for="wishicon-1">favorite_border</label>
+            </div>
           </div>
+
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/beautiful-fashion-woman-posing-with-elegant-suit_1328-3302.jpg?t=st=1711519324~exp=1711522924~hmac=e9a00927566a3ca5f27d50c26dc5da155ae1d216137fe95b280a3b6c6151c33c&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/women2.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Coat</p>
+              <p>4 Size</p>
+              <p>2 Colors</p>
+              <p>CA $129</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-2" />
+              <label class="material-symbols-outlined" for="wishicon-2">favorite_border</label>
+            </div>
           </div>
+
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/woman-model-demonstrating-cloths_1303-30833.jpg?t=st=1711519325~exp=1711522925~hmac=07ad5c327ab122bcc1bba400821f9e7aabeebbbea7bb79495ac8bd0c1cc0844f&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/women8.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Sweater</p>
+              <p>3 Size</p>
+              <p>4 Colors</p>
+              <p>CA $89</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-3" />
+              <label class="material-symbols-outlined" for="wishicon-3">favorite_border</label>
+            </div>
           </div>
+
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/handsome-young-man-student-businessman-jacket-holds-his-arms-crossed-isolated-light-grey-wall_231208-6131.jpg?t=st=1711520483~exp=1711524083~hmac=ee6a87e798e3fae0a077e4d1a930f0c5cb19a0b245301d3b9ce048c0c4cab876&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/men1.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Blazer</p>
+              <p>3 Size</p>
+              <p>3 Colors</p>
+              <p>CA $149</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-4" />
+              <label class="material-symbols-outlined" for="wishicon-4">favorite_border</label>
+            </div>
           </div>
+
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/full-length-portrait-confident-successful-man_171337-16784.jpg?t=st=1711520460~exp=1711524060~hmac=7a36b7788bb1667d9f6eb54b63e1dade5972b0cd3dc588f943d441e60c978b46&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/men2.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Shirt</p>
+              <p>3 Size</p>
+              <p>1 Colors</p>
+              <p>CA $49</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-5" />
+              <label class="material-symbols-outlined" for="wishicon-5">favorite_border</label>
+            </div>
           </div>
+
           <div class="co-product-container">
-            <img
-              src="https://img.freepik.com/free-photo/happy-young-successful-man-business-stylish-clothes-standing-isolated-white-wall_496169-1017.jpg?t=st=1711520494~exp=1711524094~hmac=b43a6d1aca09cf0745cf84c1923ddce1f059d3811c81204865533117e9a9fa14&w=826" />
-            <div class="co-product-info-container"></div>
+            <a href="/product-detail.html">
+              <img src="/resources/men3.jpg" />
+            </a>
+            <div class="co-product-info-container">
+              <p>Vest</p>
+              <p>1 Size</p>
+              <p>4 Colors</p>
+              <p>CA $39</p>
+            </div>
+            <div class="co-product-wishicon">
+              <input type="checkbox" id="wishicon-6" />
+              <label class="material-symbols-outlined" for="wishicon-6">favorite_border</label>
+            </div>
           </div>
         </div>
       </div>
@@ -208,7 +280,7 @@
       <div class="footer-content">
         <section class="left-footer">
           <div class="footer-logo">
-            <img src="logoipsum-329.svg" />
+            <img src="/resources/logo.svg" />
           </div>
         </section>
         <section class="middle-footer">
@@ -217,9 +289,9 @@
             <ul class="sitemap-left">
               <li><a href="home.html">Home</a></li>
               <li><a href="about-us.html">About Us</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Kid</a></li>
+              <li><a href="category.html">Men</a></li>
+              <li><a href="category.html">Women</a></li>
+              <li><a href="category.html">Kid</a></li>
             </ul>
             <ul class="sitemap-right">
               <li><a href="wish-list.html">Wishlist</a></li>

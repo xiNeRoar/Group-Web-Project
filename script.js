@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Creating a popup and adding it to the map
   var popup = L.popup(popupOptions, layer)
     .setLatLng([17.385044, 78.486671]) // Set the latitude and longitude
-    .setContent("<p>Headquarter</p>900 Burrard St, Vancouver, BC V6Z 3G5") // Set the content
+    .setContent("<p>Office</p>900 Burrard St, Vancouver, BC V6Z 3G5") // Set the content
     .openOn(map); // Open the popup
 });
